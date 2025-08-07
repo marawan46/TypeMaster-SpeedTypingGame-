@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body class="d-flex flex-column gap-2 bg-dark">
+    <div class="hero text-center col-12 bg-dark d-flex gap-3 flex-column align-items-center border-bottom border-secondary">
+        <div class="icon">
+            <div class="logo">
+                <i class="fa-regular fa-keyboard"></i>
+            </div>
+        </div>
+        <h1 class="primary">TypeMaster</h1>
+        <p class="w-50 text-white">Improve your typing speed and accuracy with our modern, feature-rich typing test platform. Choose your preferred mode and theme for the best experience.</p>
+        <div class="featuers d-flex gap-4">
+            <div>
+                <i class="fa-solid primary fa-chart-simple"></i>
+                <p class="text-white">Accuracy Tracking</p>
+            </div>
+            <div>
+                <i class="fa-solid primary fa-gauge-high"></i>
+                <p class="text-white">Speed Metrics</p>
+            </div>
+            <div>
+                <i class="fa-solid primary fa-gears"></i>
+                <p class="text-white">Multiple Modes</p>
+            </div>
+
+        </div>
+    </div>
+
+
+<div class="container shadow-lg text-category p-4 border border-1 border-secondary rounded-3">
+
+    <div class="row g-3">
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <button onclick="CategorySelection(event)" name="random" class="w-100 btn btn-outline-primary active category py-3 text-secondary d-flex flex-column text-center bg-dark border border-1 rounded-3 border-secondary">
+        <i class="fa-solid fa-shuffle mb-2"></i>
+        <div class="name fs-5">Mixed</div>
+        <div class="sub">Variety of Text</div>
+      </button>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <button onclick="CategorySelection(event)" name="programmers" class="w-100 btn btn-outline-primary category py-3 text-secondary d-flex flex-column text-center bg-dark border border-1 rounded-3 border-secondary">
+        <i class="fa-solid fa-microchip"></i>
+        <div class="name fs-5">Tech</div>
+        <div class="sub">Tech Quotes</div>
+      </button>
+    </div>
+
+    <div class="col-12 col-sm-6 col-lg-4">
+      <button onclick="CategorySelection(event)" name="stoicism" class="w-100 btn btn-outline-primary category py-3 text-secondary d-flex flex-column text-center bg-dark border border-1 rounded-3 border-secondary">
+        <div>😎</div>
+        <div class="name fs-5">stoicism</div>
+        <div class="sub">stoicism quotes</div>
+      </button>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container text-white stats shadow-lg border border-1 border-secondary rounded-3">
+    <div class="row">
+      <div class="col d-flex flex-column text-center p-2">
+        <p class="WPM m-0 fs-2 text-primary">222</p>
+        <span class="fw-light fs-4">WPM</span>
+      </div>
+
+      <div class="col d-flex flex-column text-center p-2">
+        <p class="accuracy m-0 fs-2 text-primary">100%</p>
+        <span class="fw-light fs-4">Accuracy</span>
+      </div>
+
+      <div class="col d-flex flex-column text-center p-2">
+        <p class="time m-0 fs-2 text-primary">10:00</p>
+        <span class="fw-light fs-4">Time</span>
+      </div>
+
+      <div class="col d-flex flex-column text-center p-2">
+        <p class="errors m-0 fs-2 text-primary">5</p>
+        <span class="fw-light fs-4">Errors</span>
+      </div>
+    </div>
+</div>
+
+
+    <div class="container text text-white">
+        
+    </div>
+    <!-- for dubug -->
+    <div class="current"></div>
+
+    <button onclick="Generate(event)" onkeydown="handleKeyDown(event)" class="btn btn-primary">Generate</button>
+
+    <script src="https://kit.fontawesome.com/31bbfc3a73.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
