@@ -18,7 +18,7 @@ let timeStarted = false
 
 function makeScreen(text){
       //reset Timer and Accuracy
-       clearTimer()
+       StopResetTimer()
        timeStarted = false
        WrongChars = 0
        CalcAccuracy(WrongChars)
@@ -93,7 +93,7 @@ function ManageKeyStroke(event){
               tokens[cursorCurrent].classList.contains('done')
            )) 
            {
-                  stopTimer()
+                  clearInterval(timerInterval)
                   window.removeEventListener('keydown', ManageKeyStroke);
                   return;
             }
@@ -189,9 +189,10 @@ function clearTimer(){
    document.querySelector('.time').textContent = '00:00';
     
 }
-function stopTimer() {
+function StopResetTimer() {
    console.log("timer Stoped!")
     clearInterval(timerInterval);
+    clearTimer()
 }
 
 makeScreen(ScreenText)
